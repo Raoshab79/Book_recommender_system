@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Recommender System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<style>
+    .text-white{
+        color:white
+    }
+</style>
+<body style="background-color:papayawhip">
+
+    <nav class="navbar" style="background-colour:#00a65a">
+        <a class="navbar-brand">My Book Recommender</a>
+        <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/recommend">Recommend</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+             <div class="col-md-12">
+                 <h1 class="text-white" style="font-size:50px">Recommend Book</h1>
+                 <form action="/recommend_book">
+                     <input name="user_input" type="text" class="from-control"><br>
+                     <input type="submit" class="btn btn-lg btn-warning">
+                 </form>
+            </div>
+            {% if data %}
+            {% for i in data %}
+                 <div class="col-md-3" style="margin-top:50px">
+                    <div class="card">
+                        <div class="card-body">
+                          <img class="card-img-top" src="{{i[2]}}">
+                          <h2 class="text-Black">dtjrt</h2>
+                          <h4 class="text-Black">wew4hg</h4>
+
+                        </div>
+                   </div>
+                 </div>
+            {% endfor %}
+
+            {% endif %}
+
+
+
+        </div>
+    </div>
+</body>
+</html>/title>
+</head>
+<body>
+
+</body>
+</html>
